@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case statement in JavaScript</title>
+</head>
+<body>
+    <form action="#">
+        Days<input type="text" id="input" placeholder="eg. 1 for sunday"><br>
+        <button type="button" onclick="fun()">CHECK</button>
+        <p id="result"></p>
+    </form>
+    <script>
+        var fun =  function(){
+            var choice = Number(document.getElementById('input').value);
+            switch(choice){
+                case 1:
+                    document.getElementById('result').innerHTML = "Sunday";
+                    break;
+                case 2:
+                    document.getElementById('result').innerHTML = "Monday";
+                    break;
+                case 3:
+                    document.getElementById('result').innerHTML = "Tuesday";
+                    break;
+                case 4:
+                    document.getElementById('result').innerHTML = "Wednesday";
+                    break;
+                case 5:
+                    document.getElementById('result').innerHTML = "Thursday";
+                    break;
+                case 6:
+                    document.getElementById('result').innerHTML = "Friday";
+                    break;
+                case 7:
+                    document.getElementById('result').innerHTML = "Saturday";
+                    break;
+                    default:
+                        document.getElementById('result').innerHTML = "INVALID";
+                        break;
+
+            }
+        }
+
+    </script>
+</body>
+</html>
