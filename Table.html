@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table using JS</title>
+</head>
+<body>
+    <script>
+       var n = "";
+
+for (var i = 1; i <= 5; i++) {
+    // n += "<tr class='" + (i % 2 ? "oddrow" : "evenrow") + "'>";
+
+    n += "<td>" + i + "</td>";
+    n += "<td>" + 10 * i + "</td>";
+    n += "<td>" + 100 * i + "</td>";
+    n += "<td>" + 1000 * i + "</td>";
+
+    n += "</tr>";
+}
+
+document.body.innerHTML += "<table border='1'><thead><tr>" +
+    "<th>N</th><th>N * 10</th><th>N * 100</th><th>N * 1000</th>" +
+    "</tr></thead><tbody>" + n + "</tbody></table>";
+    </script>
+</body>
+</html>
